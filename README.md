@@ -1,54 +1,85 @@
-# React + TypeScript + Vite
+# Lista de Contatos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação de gerenciamento de contatos feita como exercício do módulo 32 da EBAC. Permite visualizar, adicionar, editar e remover contatos usando React, Redux, TypeScript e Styled-components.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demonstração
 
-## Expanding the ESLint configuration
+📌 A aplicação está disponível no Vercel:  
+https://lista-contatos-amber.vercel.app
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+*(Caso tenha deploy, mantenha o link; se não, remova ou informe que roda localmente.)*
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 💻 Tecnologias
+
+- **React**  
+- **TypeScript**  
+- **Redux**  
+- **Styled-components**  
+- **Vite**
+
+---
+
+## 🎯 Funcionalidades
+
+- Listar contatos  
+- Adicionar novo contato  
+- Editar contato existente  
+- Deletar contato  
+- Validação dos dados básicos (nome, email...
+
+---
+
+## 📁 Estrutura do projeto
+
+```
+lista-contatos/
+├── public/ # HTML eAssets públicos
+├── src/
+│ ├── components/ # Componentes reutilizáveis
+│ ├── pages/ # Páginas da aplicação
+│ ├── redux/ # Store, reducers e actions
+│ ├── styles/ # Estilos globais
+│ └── App.tsx # Componente principal
+├── package.json
+└── vite.config.ts
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Como rodar localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone este repositório  
+2. Instale as dependências: npm install
+3. Inicie o servidor de desenvolvimento: npm run dev
+4. Abra no navegador: http://localhost:3000
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## ✅ Como usar
+
+1. Na tela inicial, veja a lista de contatos  
+2. Clique em **Adicionar contato** para criar um novo  
+3. Clique em **Editar** para alterar dados  
+4. Clique em **Deletar** para remover  
+5. Todos os dados são mantidos no estado via Redux.
+
+---
+
+## 📌 Notas
+
+- O foco está na manipulação de estado com Redux e tipagem com TypeScript.  
+- Os estilos foram feitos pelo Styled-components para modularidade.  
+- Ideal para estudos sobre gerenciamento de estado em apps React.
+
+---
+
+## 🔗 Links
+
+- Projeto hospedado: https://lista-contatos-amber.vercel.app  
+
+---
+
+Desenvolvido para fins educacionais na EBAC
