@@ -4,15 +4,6 @@ Aplicação de gerenciamento de contatos feita como exercício do módulo 32 da 
 
 ---
 
-## 🚀 Demonstração
-
-📌 A aplicação está disponível no Vercel:  
-https://lista-contatos-amber.vercel.app
-
-*(Caso tenha deploy, mantenha o link; se não, remova ou informe que roda localmente.)*
-
----
-
 ## 💻 Tecnologias
 
 - **React**  
